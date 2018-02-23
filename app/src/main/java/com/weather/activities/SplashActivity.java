@@ -5,28 +5,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.weather.app.WeatherApplication;
-import com.weather.dbcontroller.DatabaseManager;
-import com.weatherapp.R;
+import com.weather.R;
 
-import javax.inject.Inject;
-
-/**
- * Created by Anu on 22/02/2018.
+/*
+  Activity Class for Initial Screen
  */
-
 public class SplashActivity extends Activity{
 
-    @Inject DatabaseManager dbManager;
-
+    /*
+       Loading Weather Details Page
+     */
     Runnable mShowloginScreen = new Runnable() {
         @Override
         public void run() {
 
-           /* Intent homeIntent = new Intent(SplashActivity.this,
+            Intent homeIntent = new Intent(SplashActivity.this,
                     WeatherActivity.class);
             startActivity(homeIntent);
-            finish();*/
+            finish();
         }
     };
 

@@ -1,4 +1,4 @@
-package weather.com.weatherinfo;
+package com.weather;
 
 import org.junit.Test;
 
