@@ -20,6 +20,7 @@ Adapter class for populating current weather for cities
 public class WeatherAdapter extends RecyclerView.Adapter
 
 {
+    //For showing degree celsius
     private static final String DEGREE ="&#xb0;";
 
     private List<WeatherDataRequired> weatherDetailsList;
@@ -37,6 +38,9 @@ public class WeatherAdapter extends RecyclerView.Adapter
         return new WeatherViewHolder(parent);
     }
 
+    /*
+      Binding data to views
+     */
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
 

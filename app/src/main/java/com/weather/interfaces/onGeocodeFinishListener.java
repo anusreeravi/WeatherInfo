@@ -4,10 +4,11 @@ import android.location.Address;
 
 import java.util.List;
 
-/**
- * Created by Anu on 22/02/2018.
- */
 
+
+   /*
+      Interface for notifying geocode network is finished or not
+    */
     public interface onGeocodeFinishListener {
         public abstract void onFinished(List<Address> results);
     }

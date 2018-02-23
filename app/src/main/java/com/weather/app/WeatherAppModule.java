@@ -14,6 +14,9 @@ import dagger.Provides;
 @Module
 public  class WeatherAppModule {
 
+    /*
+      Accessing Singleton Context object
+     */
     @Provides
     @Singleton
     public Context provideContext(){

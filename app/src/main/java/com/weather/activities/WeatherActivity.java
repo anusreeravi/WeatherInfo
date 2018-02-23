@@ -1,8 +1,6 @@
 package com.weather.activities;
 
-/**
- * Created by Anu on 22/02/2018.
- */
+
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

@@ -15,7 +15,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 /*
-Presenter class for fetching weather info
+    Presenter class for fetching weather info
  */
 public class WeatherDetailsPresenter implements WeatherDetailsContract.Presenter {
 
@@ -42,7 +42,9 @@ public class WeatherDetailsPresenter implements WeatherDetailsContract.Presenter
 
 
 
-
+   /*
+     Fetching Data from network if connected or from previous visit if offline
+    */
     private void fetchWeatherInfo() {
         try {
             List<WeatherDataRequired> weatherDataList = dataProvider.populateList();
@@ -96,7 +98,9 @@ public class WeatherDetailsPresenter implements WeatherDetailsContract.Presenter
             }
 
     }
-
+    /*
+        Fetching Data from previous visit if offline
+       */
     private void populatefromDB(){
         weatherDataRequiredList=dbManager.getAllData();
         weatherView.showWeatherDetails(weatherDataRequiredList);

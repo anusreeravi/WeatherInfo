@@ -1,7 +1,9 @@
 package com.weather.models;
 
-/**
- * Created by Anu on 22/02/2018.
+
+
+/*
+   Model class for populating required weather data
  */
 
 public class WeatherDataRequired {

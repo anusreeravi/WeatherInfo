@@ -11,7 +11,9 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 import retrofit2.http.Url;
 
-
+/*
+   Fetching weather details using retrofit
+ */
 public class GetWeatherDetails extends WebserviceHelper {
 
     private final String EXCLUDE_FLAGS="daily,minutely,hourly,flags";

@@ -18,8 +18,8 @@ import com.weather.models.WeatherDataRequired;
 import java.util.List;
 
 
-/*##
-Fragment class for viewing weather data
+/*
+   Fragment class for viewing weather data
  */
 public class WeatherListFragment extends Fragment implements WeatherDetailsContract.View {
     private final String LOADING = "Loading...";
@@ -90,9 +90,7 @@ public class WeatherListFragment extends Fragment implements WeatherDetailsContr
     }
 
 
-/*
-Grid layout with Recyclerview for grid style
- */
+
     private void inflateViews(View rootView){
         recyclerView = (RecyclerView) rootView.findViewById(R.id.weather_recyclerview);
         progressDialog = new ProgressDialog(getActivity());

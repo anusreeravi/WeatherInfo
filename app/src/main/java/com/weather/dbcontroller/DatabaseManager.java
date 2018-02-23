@@ -14,10 +14,13 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+/*
+   Database Manager class where values are populated and fetched from database
+ */
 public class DatabaseManager extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     // Database Name
-    private static final String DATABASE_NAME = "City";
+    private static final String DATABASE_NAME = "city";
     // tasks table name
     private static final String TABLE_CITY = "city_table";
     // tasks Table Columns names
@@ -36,6 +39,9 @@ public class DatabaseManager extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
+    /*
+       Creating table
+     */
     @Override
     public void onCreate(SQLiteDatabase db) {
         //    dbase = db;
@@ -62,6 +68,9 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
 
 
+    /*
+      Adding details to DB
+     */
     public void saveDB(List<WeatherDataRequired> details) {
         SQLiteDatabase db = this.getWritableDatabase();
         try {
@@ -84,6 +93,9 @@ public class DatabaseManager extends SQLiteOpenHelper {
         }
     }
 
+    /*
+      Fetching data from DB
+     */
     public List<WeatherDataRequired> getAllData() {
         SQLiteDatabase db = this.getReadableDatabase();
         List<WeatherDataRequired> weatherDetailsList = new ArrayList<>();
@@ -119,7 +131,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
         }
         return weatherDetailsList;
     }
-    public String getCityName(String lat,String lon) {
+    /*public String getCityName(String lat,String lon) {
         SQLiteDatabase db = this.getReadableDatabase();
         String cityName="";
         try {
@@ -139,7 +151,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
             db.close();
         }
         return cityName;
-    }
+    }*/
 
 }
 

@@ -16,6 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitHelper {
 
+    //Server url
     public static  String BASE_URL = "https://api.darksky.net/";
 
 
@@ -81,6 +82,9 @@ public class RetrofitHelper {
     }
 */
 
+   /*
+      Setting header type JSON
+    */
 
     public  static OkHttpClient getHeaderIntercepter() {
 

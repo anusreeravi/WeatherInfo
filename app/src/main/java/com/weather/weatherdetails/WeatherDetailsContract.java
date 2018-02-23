@@ -5,8 +5,8 @@ import com.weather.models.WeatherDataRequired;
 import java.util.List;
 
 
-/*
-Contract for weather detail view
+ /*
+   Contract for weather detail view for populating data
  */
 public interface WeatherDetailsContract {
 

@@ -5,6 +5,9 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+/*
+  Model class for Retrofit weather request call
+ */
 public class WeatherDetails {
 
     public class Alert {

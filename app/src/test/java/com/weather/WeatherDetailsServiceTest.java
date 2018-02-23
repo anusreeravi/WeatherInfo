@@ -17,7 +17,6 @@ public class WeatherDetailsServiceTest {
 
         new GetWeatherDetails().getCurrentWeatherDetails("51.5074", "0.1278",new WebserviceCallBack() {
 
-
             @Override
             public void showProgress() {
 

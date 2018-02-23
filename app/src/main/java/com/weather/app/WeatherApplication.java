@@ -2,10 +2,9 @@ package com.weather.app;
 
 import android.app.Application;
 
-/**
- * Created by Anu on 22/02/2018.
+/*
+  * Application class where API Key is stored and DaggerAppComponent is created
  */
-
 public class WeatherApplication extends Application{
 
     public  final String API_KEY = "965faceafdc868b8e82a1abeb4648d64";
@@ -21,6 +20,9 @@ public class WeatherApplication extends Application{
         createComponent();
     }
 
+    /*
+      *Created AppComponent for module
+     */
    protected void createComponent() {
        component = DaggerWeatherAppComponent.builder().weatherAppModule(new WeatherAppModule())
                             .build();

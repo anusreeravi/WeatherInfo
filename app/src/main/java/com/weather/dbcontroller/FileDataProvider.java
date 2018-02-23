@@ -20,9 +20,6 @@ import java.util.Locale;
 
 import javax.inject.Inject;
 
-/**
- * Created by Anu on 23/02/2018.
- */
 
 public class FileDataProvider {
 
@@ -34,6 +31,9 @@ public class FileDataProvider {
 
     }
 
+    /*
+      Checking device is connected to internet
+     */
     private boolean isNetworkAvailable() {
         try {
             ConnectivityManager connectivityManager
@@ -46,6 +46,10 @@ public class FileDataProvider {
             return false;
         }
     }
+
+    /*
+      Populate city details from XML file
+     */
     public List<WeatherDataRequired> populateList(){
         if(isNetworkAvailable()) {
             AssetManager assetManager = context.getAssets();
@@ -66,6 +70,9 @@ public class FileDataProvider {
     }
 
 
+    /*
+       Reading from XML
+     */
     private ArrayList<String> readXml( InputStream inputStream ){
         ArrayList<String> cityList = new ArrayList<>();
         try {
@@ -97,6 +104,9 @@ public class FileDataProvider {
 
 
 
+    /*
+      Fetching latitude and longitude from Geocoder
+     */
     private List<WeatherDataRequired> setCoordinates(ArrayList<String> cityList) {
         List<WeatherDataRequired> weatherDataList  =new ArrayList<>();
         for (String city : cityList) {
