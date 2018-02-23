@@ -25,9 +25,9 @@ public class DatabaseManager extends SQLiteOpenHelper {
     private static final String KEY_NAME = "name";
     private static final String KEY_LAT = "lat";
     private static final String KEY_LON = "lon";
-    private static final String KEY_TEMP = "lon";
-    private static final String KEY_RAIN = "lon";
-    private static final String KEY_HUMIDITY = "lon";
+    private static final String KEY_TEMP = "temperature";
+    private static final String KEY_RAIN = "rain";
+    private static final String KEY_HUMIDITY = "humidity";
 
 
 
