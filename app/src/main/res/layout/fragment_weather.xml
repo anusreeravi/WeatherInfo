@@ -33,6 +33,7 @@
             android:layout_centerVertical="true"
             android:focusable="false"
             android:gravity="right"
+            android:visibility="gone"
             android:iconifiedByDefault="true"
              />
     </android.support.v7.widget.Toolbar>
